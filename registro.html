@@ -94,6 +94,7 @@
           >
           <input
             class="input__login"
+            id="email"
             type="text"
             placeholder="¿Cuál es tu correo electrónico?"
           />
@@ -105,13 +106,16 @@
           >
           <input
             class="input__login"
+            id="vuelve"
             type="text"
             placeholder="Vuelve a poner tu correo electrónico"
           />
           <span class="letras">Crea una contraseña</span>
-          <div class="inputIcon">
+          <div class="inputIcon"
+          >
             <input
               class="input__login-password"
+              id="password"
               type="password"
               placeholder="Crea una contraseña"
             />
@@ -152,6 +156,7 @@
           <input
             class="input__login"
             type="text"
+            id="displayname"
             placeholder="Pon un nombre de perfil"
           />
           <span class="link2">Esto aparece en tu perfil.</span>
@@ -164,11 +169,11 @@
             <label for="anio" class="anio-label">Año</label>
 
             <label for="">
-              <input class="input__dia" type="text" placeholder="DD" id="dia" />
+              <input class="input__dia" type="text" placeholder="DD" id="day" />
             </label>
 
             <label for="">
-              <select name="" id="mes" class="input__mes">
+              <select name="" id="month" class="input__mes">
                 <option value="">Mes</option>
                 <option value="">Enero</option>
                 <option value="">Febrero</option>
@@ -189,7 +194,7 @@
               <input
                 type="text"
                 placeholder="AAAA"
-                id="anio"
+                id="year"
                 class="input__anio"
               />
             </label>
@@ -198,7 +203,7 @@
           <span class="letras">¿Cuál es tu género?</span>
           <div>
             <label class="genero">
-              <input class="radio-hombre" type="radio" name="genero" />
+              <input id="hombre" class="radio-hombre" type="radio" name="genero" />
               <label for=""  class="generoRadio">Hombre</label>
             </label>
             <labe class="genero">
