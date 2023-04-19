@@ -244,7 +244,7 @@
             <a href="" class="link4">Política de privacidad</a> de Spotify.</span
           >
           <div>
-            <a href="" class="boton boton--sesion"><!--bloque-->
+            <a href="" class="boton boton--sesion"  id="myButton"><!--bloque-->
               <span class="boton__texto">Registrate</span>
             </a>
           </div>
@@ -254,3 +254,9 @@
     </div>
   </body>
 </html>
+<script>
+  const myButton = document.getElementById('myButton');
+  myButton.addEventListener('click', function() {
+    alert('¡Registro concluido!');
+  });
+</script>
