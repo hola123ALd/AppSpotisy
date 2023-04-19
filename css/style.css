@@ -1,0 +1,310 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif)), Helvetica, Arial, sans-serif;
+}
+
+input[type=checkbox] {
+  accent-color: #1DB954;
+}
+
+.input__login {
+  font-size: 1rem;
+  border: 0;
+  box-shadow: inset 0 0 0 1px var(--essential-subdued, #878787);
+}
+
+.inputIcon {
+  box-shadow: inset 0 0 0 1px var(--essential-subdued, #878787);
+}
+
+.input__login-password {
+  background-color: transparent;
+  font-size: 1rem;
+  border: 0;
+}
+
+.input__login:hover {
+  box-shadow: inset 0 0 0 1px var(--essential-subdued, #000000);
+}
+
+.inputIcon:hover:hover {
+  box-shadow: inset 0 0 0 1px var(--essential-subdued, #000000);
+}
+
+.input__login:focus {
+  outline: none;
+  border: 2px solid #000000;
+}
+
+.inputIcon:focus {
+  outline: none;
+  border: 2px solid #000000;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+.spotify {
+  border-bottom: 1px solid rgb(217, 218, 220);
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.spotify__logo {
+  padding: 0px 0px 12px;
+  height: 56px;
+  margin-top: 15px;
+}
+
+.formulario__texto {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.boton {
+  font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+  border: none;
+  font-size: 14px;
+  min-width: 200px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(24, 119, 242);
+  transition: 0.3s ease all;
+  border: 1px solid #6A6A6A;
+  margin-bottom: 10px;
+  letter-spacing: 0.107em;
+}
+
+.icono {
+  font-size: 21px;
+}
+
+.boton__texto {
+  font-weight: 600;
+}
+
+.boton:hover {
+  text-decoration: none;
+  border: 1px solid #000;
+}
+
+.boton--apple {
+  background: #191919;
+}
+
+.boton--google {
+  background: #FFFFFF;
+  color: #6A6A6A;
+}
+
+.boton--telefon {
+  font-size: 14px;
+  text-transform: uppercase;
+  background: #FFFFFF;
+  color: rgba(106, 106, 106, 0.9098039216);
+}
+
+.boton--sesion {
+  font-size: 14px;
+  text-transform: uppercase;
+  background: #1ED760;
+  color: #000;
+  display: inline-flex;
+  border: none;
+  text-align: center;
+  min-width: 200px;
+  height: 50px;
+  margin-left: 250px;
+  margin-top: -30px;
+}
+
+.formulario {
+  flex: 3 1 0%;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 10px;
+  background: white;
+}
+
+.formulario__contenido {
+  padding-top: 20px;
+  max-width: 450px;
+  width: 100%;
+}
+
+.division {
+  display: flex;
+  flex-direction: row;
+}
+
+.presentacion {
+  margin: 12px 0px 20px;
+  flex: 1 1 0%;
+  border-top: 1px solid rgb(217, 218, 220);
+}
+
+.presentacion--central {
+  font-size: 0.875rem;
+  font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+  flex: 0.3 1 0%;
+  align-self: center;
+  text-align: center;
+  line-height: 1px;
+  font-weight: 700;
+  background: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.input__login,
+.input__login-password {
+  min-width: 390px;
+  height: 50px;
+  border-radius: 4px;
+  padding-inline: 14px;
+}
+
+.formulario__contenidoDos {
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.login-password-preview {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+  background-color: transparent;
+  border: 0px;
+  border-radius: 500px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  touch-action: manipulation;
+  transition-duration: 33ms;
+  transition-property: background-color, border-color, color, box-shadow, filter, transform;
+  user-select: none;
+  vertical-align: middle;
+  transform: translate3d(0px, 0px, 0px);
+  color: var(--text-subdued, #6a6a6a);
+  min-inline-size: 0px;
+  padding-block: 12px;
+  min-block-size: 48px;
+  padding-inline: 0px;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.icono_preview {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  color: var(--text-subdued, #6a6a6a);
+  right: 12px;
+}
+
+.inputIcon {
+  position: relative;
+  width: 100%;
+}
+
+.olvidadoContraseña {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.olvidadoContraseña:hover {
+  color: #117A37;
+}
+
+.icon-google {
+  background: url(https://accounts.scdn.co/sso/images/google-icon.1cdc8fce9609d07f0e9d8d0bc4b61f8f.svg) center center no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.label-input__login {
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+}
+
+.checkLabelRecuerdame {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin-block: 0px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+}
+
+.checkGreen {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.noCuenta {
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin-block: 0px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-family: var(--font-family, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+  padding-block-end: 20px;
+}
+
+@media (max-width: 600px) {
+  .boton--sesion {
+    font-size: 14px;
+    text-transform: uppercase;
+    background: #1ED760;
+    color: #000;
+    display: inline-flex;
+    border: none;
+    text-align: center;
+    margin-top: 4px;
+    min-width: 200px;
+    height: 50px;
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
